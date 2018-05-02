@@ -4,7 +4,7 @@ function lowerCaseDrivers(drivers) {
 }
 
 function nameToAttributes(drivers) {
-  return drivers.map(function (name) {return Object.assign({}, name, {firstName: name.split(" ")[0], lastName: name.split(" ")[1]})})
+  return drivers.map(function (name) {return Object.assign({}, name, {firstName: name.toLowerCase().split(" ")[0], lastName: name.toLowerCase.split(" ")[1]})})
 }
 
 function attributesToPhrase(drivers) {
